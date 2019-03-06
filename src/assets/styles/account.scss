@@ -1,0 +1,592 @@
+@import "../../assets/styles/mixins.scss";
+.Gbox {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    overflow: hidden;
+    // min-height: 620px;
+    margin-bottom: 107px;
+    .Gbox-left {
+        width: 180px;
+        height: 503px;
+        background-color: #3d3d4e;
+        margin-right: 10px;
+        float: left;
+        .person {
+            width: 180px;
+            height: 63px;
+            border-bottom: 1px solid #4b4b61;
+            text-align: center;
+            font-family: MicrosoftYaHei;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 63px;
+            letter-spacing: 0px;
+            color: #ffffff;
+        }
+        .Gbox-ul {
+            width: 180px;
+            padding-top: 8px;
+            // text-align: center;
+            line-height: 41px;
+            li {
+                width: 180px;
+                height: 41px;
+                text-align: center;
+                line-height: 41px;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 41px;
+                letter-spacing: 0px;
+                color: #ffffff;
+                position: relative;
+                cursor: pointer;
+                i {
+                    display: inline-block;
+                    position: absolute;
+                }
+                span {
+                    float: right;
+                    margin-right: 52px;
+                }
+            }
+            li:hover {
+                background: #fc2b90;
+            }
+            .active {
+                background: #fc2b90;
+            }
+        }
+    }
+    .Gbox-content {
+        width: 1010px;
+        // height: 503px;
+        min-height: 503px;
+        background: #3d3d4e;
+        float: right;
+        //基本资料
+        .Gbox-top {
+            width: 966px;
+            margin-left: 25px;
+            margin-top: 35px;
+            padding-left: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #4b4b61;
+            overflow: hidden;
+            .ul-left {
+                width: 292px;
+                float: left;
+                position: relative;
+                .name {
+                    display: inline-block;
+                    width: 64px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    line-height: 28px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    opacity: 0.4;
+                }
+                .nameRight {
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    margin-left: 15px;
+                    min-width: 50px;
+                    display: inline-block;
+                    position: relative;
+                }
+                div {
+                    display: inline-block;
+                    position: relative;
+                    margin-left: 5px;
+                    .question {
+                        width: 15px;
+                        height: 15px;
+                        display: block;
+                        position: absolute;
+                        left: 0px;
+                        top: 3px;
+                        background-color: #3d3d4e;
+                        background: url("/static/image/person/question.png") no-repeat 0 0;
+                    }
+                }
+                .goUp {
+                    margin-left: 5px;
+                    text-decoration: underline;
+                }
+                .Amoney {
+                    display: inline-block;
+                    margin-left: 26px;
+                    text-decoration: underline;
+                }
+                a:hover {
+                    color: #fc2b90;
+                }
+            }
+            .ul-right {
+                width: 292px;
+                float: left;
+                .name {
+                    display: inline-block;
+                    width: 64px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    line-height: 28px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    opacity: 0.4;
+                }
+                .nameRight {
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    margin-left: 15px;
+                }
+            }
+        }
+        .Gbox-bottom {
+            padding-top: 39px;
+            padding-left: 52px;
+            .toLink {
+                overflow: hidden;
+                span {
+                    height: 40px;
+                    width: 100px;
+                    margin-right: 5px;
+                    line-height: 40px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    float: left;
+                }
+                p {
+                    display: inline-block;
+                    width: 450px;
+                    height: 40px;
+                    line-height: 40px;
+                    background: #efefef;
+                    color: #5f5d5d;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    float: left;
+                }
+                .copy {
+                    width: 80px;
+                    height: 40px;
+                    color: #ffffff;
+                    background: #fc2b90;
+                    border: 0;
+                    border-radius: 0;
+                    padding: 0;
+                    float: left;
+                }
+                .procu {
+                    width: 80px;
+                    height: 40px;
+                    color: #ffffff;
+                    background: #7e4de7;
+                    border: 0;
+                    border-radius: 0;
+                    padding: 0;
+                    margin: 0;
+                    float: left;
+                }
+            }
+            .text {
+                margin-top: 52px;
+                li {
+                    height: 30px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 30px;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    .span1 {
+                        color: #2ca70a;
+                    }
+                    .span2 {
+                        color: #fa8b42;
+                    }
+                }
+            }
+        }
+        //安全中心
+        .safety-top {
+            width: 966px;
+            margin-left: 25px;
+            margin-top: 48px;
+            padding-left: 43px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #4b4b4b;
+            .tip {
+                padding-left: 93px;
+                height: 21px;
+                line-height: 21px;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #b0b0b5;
+            }
+            .changeMsg {
+                width: 80px;
+                height: 34px;
+                background: #e147fe;
+                border-radius: 4px;
+                margin-left: 93px;
+                border: 0;
+                padding: 0;
+            }
+            label {
+                width: 78px;
+                height: 34px;
+                text-align: left;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 34px;
+                letter-spacing: 0px;
+                color: #ffffff;
+                float: left;
+                margin-right: 15px;
+            }
+            input {
+                width: 280px;
+                height: 34px;
+                border-radius: 4px;
+                background: #ffffff;
+                &::placeholder {
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 34px;
+                    letter-spacing: 0px;
+                    color: #999999;
+                }
+            }
+        }
+        .safety-bottom {
+            margin-top: 30px;
+            margin-left: 25px;
+            padding-left: 43px;
+            label {
+                width: 78px;
+                height: 34px;
+                text-align: left;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 34px;
+                letter-spacing: 0px;
+                color: #ffffff;
+                float: left;
+                margin-right: 15px;
+            }
+            input {
+                width: 280px;
+                height: 34px;
+                border-radius: 4px;
+                background: #ffffff;
+                &::placeholder {
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 34px;
+                    letter-spacing: 0px;
+                    color: #999;
+                }
+            }
+            p {
+                padding-left: 93px;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                line-height: 39px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 58px;
+                letter-spacing: 0px;
+                color: #b0b0b5;
+            }
+            .changeEmail {
+                width: 80px;
+                height: 34px;
+                background: #e147fe;
+                border-radius: 4px;
+                margin-left: 93px;
+                border: 0;
+                padding: 0;
+            }
+        }
+        //系统消息
+        h3 {
+            width: 981px;
+            height: 52px;
+            margin-left: 16px;
+            padding-left: 26px;
+            font-family: MicrosoftYaHei;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 52px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            border-bottom: 1px solid #4b4b61;
+        }
+        .msg {
+            width: 981px;
+            margin-left: 16px;
+            li {
+                width: 981px;
+                height: 40px;
+                padding-left: 25px;
+                line-height: 40px;
+                border-bottom: 1px solid #4b4b61;
+                .text {
+                    float: left;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 40px;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                }
+                .time {
+                    width: 140px;
+                    text-align: left;
+                    float: right;
+                    margin-right: 23px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 40px;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    opacity: 0.5;
+                }
+            }
+        }
+        //金币记录
+        .money-top {
+            width: 970px;
+            height: 40px;
+            border: 1px solid #575771;
+            background-color: #4b4b61;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding-left: 41px;
+            li {
+                width: 222px;
+                height: 40px;
+                float: left;
+                text-align: center;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 40px;
+                letter-spacing: 0px;
+                color: #ffffff;
+            }
+        }
+        .money-bottom {
+            width: 970px;
+            height: 40px;
+            border-bottom: 1px solid #4b4b61;
+            margin-left: 20px;
+            padding-left: 41px;
+            li {
+                width: 222px;
+                height: 40px;
+                float: left;
+                text-align: center;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 40px;
+                letter-spacing: 0px;
+                color: #ffffff;
+            }
+        }
+        //观看记录
+        .content {
+            overflow: hidden;
+            width: 981px;
+            padding-top: 15px;
+            padding-left: 40px;
+            &>li {
+                float: left;
+                width: 292px;
+                height: 230px;
+                background-color: #333343;
+                margin-right: 27px;
+                margin-bottom: 18px;
+                overflow: hidden;
+                cursor: pointer;
+                .one-img {
+                    width: 292px;
+                    height: 170px;
+                    position: relative;
+                    border: solid 1px #3d3d4e;
+                    img {
+                        display: block;
+                        width: 290px;
+                        height: 168px;
+                    }
+                    .img-shade {
+                        position: absolute;
+                        left: 0;
+                        top: 0px;
+                        width: 290px;
+                        height: 168px;
+                        background-color: #08070d;
+                        // display: none; 
+                        z-index: 10;
+                        opacity: 0;
+                        transition: all 0.6s;
+                    }
+                    .play {
+                        display: block;
+                        width: 56px;
+                        height: 56px;
+                        background: url("/static/image/index/play-video.png") center center no-repeat;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        margin-left: -28px;
+                        margin-top: -28px;
+                        z-index: 100;
+                        opacity: 0;
+                        transition: all 1.5s;
+                    }
+                    .time {
+                        position: absolute;
+                        right: 6px;
+                        bottom: 5px;
+                        display: block;
+                        width: 45px;
+                        height: 22px;
+                        background-color: #101010;
+                        border-radius: 4px;
+                        opacity: 0.7;
+                        color: #ffffff;
+                        font-size: 12px;
+                        line-height: 22px;
+                        text-align: center;
+                        font-style: normal;
+                    }
+                    .vip {
+                        position: absolute;
+                        left: 6px;
+                        top: 0px;
+                        display: block;
+                        width: 32px;
+                        height: 20px;
+                        background: url("/static/image/index/vip.png") center center no-repeat;
+                    }
+                    &:hover .img-shade {
+                        opacity: 0.5;
+                    }
+                    &:hover .play {
+                        opacity: 1;
+                    }
+                    &:hover {
+                        border: solid 1px #fc2b90;
+                    }
+                }
+                .two-title {
+                    width: 100%;
+                    height: 60px;
+                    border: solid 1px #3d3d4e;
+                    border-top: 0;
+                    p {
+                        width: 100%;
+                        height: 36px;
+                        line-height: 36px;
+                        padding-left: 12px;
+                        color: #ffffff;
+                        @include ellipsis();
+                        // position: absolute;
+                        // left: 0;
+                        // top: 160px;  
+                        &:hover {
+                            color: #fc2b90;
+                        }
+                    }
+                    ul {
+                        width: 100%;
+                        overflow: hidden;
+                        padding-left: 10px;
+                        li {
+                            max-width: 25%;
+                            margin-right: 9px;
+                            float: left;
+                            height: 18px;
+                            padding: 0 9px;
+                            background-color: #4e536f;
+                            border-radius: 2px;
+                            font-size: 12px;
+                            color: rgba(255, 255, 255, 0.6);
+                            line-height: 18px;
+                            text-align: center;
+                            @include ellipsis();
+                            cursor: pointer;
+                            &:hover {
+                                background: #fc2b90;
+                            }
+                            &:nth-child(4) {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+        }
+        .loading {
+            text-align: center;
+            display: block;
+            float: left;
+            width: 1010px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+    .blanktip {
+        width: 100%;
+        height: 300px;
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 300px;
+        text-align: center;
+        display: inline-block;
+    }
+}
